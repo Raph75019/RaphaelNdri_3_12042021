@@ -1,0 +1,590 @@
+.logo {
+  width: 50%;
+  font-family: "Shrikhand", cursive;
+  margin-left: 90px;
+}
+
+.recherche {
+  background-color: lightgrey;
+  height: 40px;
+}
+
+input {
+  border: none;
+  height: 40px;
+  background-color: lightgrey;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.emo-map-marker {
+  padding-left: 85px;
+}
+
+.introduction {
+  height: 350px;
+  background-color: #EFEFEF;
+}
+
+h1 {
+  padding-top: 40px;
+  margin: 0;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.phraseheader {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+.buttonrestaurant {
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  height: 50px;
+  width: 250px;
+  border-radius: 30px;
+  margin-top: 40px;
+  margin-left: 60px;
+  border: none;
+  box-shadow: 1px 1px 12px #555;
+}
+
+.cliquer {
+  color: white;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  display: flex;
+}
+.header__arrow {
+  margin-left: 5px;
+}
+.header__logo {
+  width: 10%;
+}
+.header__img {
+  width: 355px;
+}
+
+body {
+  margin: 0;
+}
+
+.choix {
+  font-family: "Shrikhand", cursive;
+}
+
+#fonctionnement {
+  display: flex;
+}
+
+.restaurant {
+  background-color: #EFEFEF;
+  box-shadow: 1px 1px 12px #555;
+  height: 60px;
+  border-radius: 10px;
+  width: 350px;
+  margin-left: 500px;
+  margin-bottom: 30px;
+}
+
+.menu {
+  background-color: #EFEFEF;
+  box-shadow: 1px 1px 12px #555;
+  height: 60px;
+  border-radius: 10px;
+  width: 350px;
+  margin-left: 500px;
+  margin-bottom: 30px;
+}
+
+.degustation {
+  background-color: #EFEFEF;
+  box-shadow: 1px 1px 12px #555;
+  height: 60px;
+  border-radius: 10px;
+  width: 350px;
+  margin-left: 500px;
+  margin-bottom: 30px;
+}
+
+.span {
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  margin-left: 90px;
+  color: black;
+  display: flex;
+  padding-top: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#photorestaurant {
+  background-color: lightgray;
+  height: 1150px;
+}
+
+.imagerestaur {
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 1px 1px 12px #555;
+  background-color: white;
+}
+
+.imagerestaur img {
+  height: 200px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+
+figcaption {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  margin-left: 15px;
+}
+
+.titre {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+footer {
+  height: 200px;
+  background-color: #353535;
+}
+
+.logofooter {
+  margin-top: 120px;
+  margin-left: 30px;
+  padding-top: 10px;
+  width: 100px;
+  color: white;
+  font-family: "Shrikhand", cursive;
+}
+
+.interaction {
+  font-size: 15px;
+  margin-left: 30px;
+  color: white;
+}
+
+.info {
+  color: white;
+  margin-left: 30px;
+}
+
+#container2 {
+  background-color: #f6f6f6;
+  border-radius: 20px 20px 0 0;
+  height: 1400px;
+}
+
+.utensils__footer {
+  padding-right: 20px;
+}
+
+.entree {
+  display: flex;
+}
+.entree__titre {
+  font-family: "Shrikhand", cursive;
+  margin-left: 20px;
+  margin-right: 100px;
+  font-size: 22px;
+}
+.entree__heart {
+  padding-top: 45px;
+  font-size: 25px;
+}
+
+.entrees__titre {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin-left: 20px;
+  border-bottom: solid 3px #99e2d0;
+  width: 40px;
+}
+.entrees__description {
+  background-color: white;
+  height: 70px;
+  border-radius: 10px;
+  width: 340px;
+  margin-left: 10px;
+}
+.entrees__tartare {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  padding-left: 8px;
+  padding-top: 8px;
+  font-size: 17px;
+}
+.entrees__descriptif {
+  font-family: "Roboto", sans-serif;
+  padding-left: 8px;
+  margin-right: 20px;
+  font-size: 15px;
+}
+
+.plats__titre {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin-left: 20px;
+  border-bottom: solid 2px #99e2d0;
+  width: 30px;
+}
+.plats__description {
+  background-color: white;
+  height: 70px;
+  border-radius: 10px;
+  width: 340px;
+  margin-left: 10px;
+}
+.plats__tartare {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  padding-left: 8px;
+  padding-top: 8px;
+  font-size: 17px;
+}
+.plats__descriptif {
+  font-family: "Roboto", sans-serif;
+  padding-left: 8px;
+  margin-right: 20px;
+}
+
+.desserts__titre {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin-left: 20px;
+  border-bottom: solid 2px #99e2d0;
+  width: 30px;
+}
+.desserts__description {
+  background-color: white;
+  height: 70px;
+  border-radius: 10px;
+  width: 340px;
+  margin-left: 10px;
+}
+.desserts__tartare {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  padding-left: 8px;
+  padding-top: 8px;
+  font-size: 17px;
+}
+.desserts__descriptif {
+  font-family: "Roboto", sans-serif;
+  padding-left: 8px;
+  margin-right: 20px;
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+  .logo {
+    width: 50%;
+    font-family: "Shrikhand", cursive;
+    margin-left: 90px;
+  }
+
+  .recherche {
+    background-color: lightgrey;
+    height: 40px;
+  }
+
+  input {
+    border: none;
+    height: 40px;
+    background-color: lightgrey;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+  }
+
+  .emo-map-marker {
+    padding-left: 85px;
+  }
+
+  .introduction {
+    height: 350px;
+    background-color: #EFEFEF;
+  }
+
+  h1 {
+    padding-top: 40px;
+    margin: 0;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .phraseheader {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .buttonrestaurant {
+    background-image: linear-gradient(#9356DC, #FF79DA);
+    height: 50px;
+    width: 250px;
+    border-radius: 30px;
+    margin-top: 40px;
+    margin-left: 60px;
+    border: none;
+    box-shadow: 1px 1px 12px #555;
+  }
+
+  .cliquer {
+    color: white;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .header {
+    display: flex;
+  }
+
+  .header__arrow {
+    margin-left: 5px;
+  }
+
+  .header__logo {
+    width: 10%;
+  }
+
+  .header__img {
+    width: 355px;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .choix {
+    font-family: "Shrikhand", cursive;
+  }
+
+  .restaurant {
+    background-color: #EFEFEF;
+    box-shadow: 1px 1px 12px #555;
+    height: 60px;
+    border-radius: 10px;
+    width: 350px;
+    margin-left: 8px;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+
+  .menu {
+    background-color: #EFEFEF;
+    box-shadow: 1px 1px 12px #555;
+    height: 60px;
+    border-radius: 10px;
+    width: 350px;
+    margin-left: 8px;
+    margin-bottom: 30px;
+  }
+
+  .degustation {
+    background-color: #EFEFEF;
+    box-shadow: 1px 1px 12px #555;
+    height: 60px;
+    border-radius: 10px;
+    width: 350px;
+    margin-left: 8px;
+    margin-bottom: 30px;
+  }
+
+  .span {
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    margin-left: 90px;
+    color: black;
+    display: flex;
+    padding-top: 20px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  #photorestaurant {
+    background-color: lightgray;
+    height: 1150px;
+  }
+
+  .imagerestaur {
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 1px 1px 12px #555;
+    background-color: white;
+  }
+
+  .imagerestaur img {
+    height: 200px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+  }
+
+  figcaption {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    margin-left: 15px;
+  }
+
+  .titre {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  footer {
+    height: 200px;
+    background-color: #353535;
+  }
+
+  .logofooter {
+    margin-top: 120px;
+    margin-left: 30px;
+    padding-top: 10px;
+    width: 100px;
+    color: white;
+    font-family: "Shrikhand", cursive;
+  }
+
+  .interaction {
+    font-size: 15px;
+    margin-left: 30px;
+    color: white;
+  }
+
+  .info {
+    color: white;
+    margin-left: 30px;
+  }
+
+  #container2 {
+    background-color: #f6f6f6;
+    border-radius: 20px 20px 0 0;
+    height: 1400px;
+  }
+
+  .entree {
+    display: flex;
+  }
+
+  .entree__titre {
+    font-family: "Shrikhand", cursive;
+    margin-left: 20px;
+    margin-right: 100px;
+    font-size: 22px;
+  }
+
+  .entree__heart {
+    padding-top: 45px;
+    font-size: 25px;
+  }
+
+  .entrees__titre {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    border-bottom: solid 3px #99e2d0;
+    width: 40px;
+  }
+
+  .entrees__description {
+    background-color: white;
+    height: 70px;
+    border-radius: 10px;
+    width: 340px;
+    margin-left: 10px;
+  }
+
+  .entrees__tartare {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    padding-left: 8px;
+    padding-top: 8px;
+    font-size: 17px;
+  }
+
+  .entrees__descriptif {
+    font-family: "Roboto", sans-serif;
+    padding-left: 8px;
+    margin-right: 20px;
+    font-size: 15px;
+  }
+
+  .plats__titre {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    border-bottom: solid 2px #99e2d0;
+    width: 30px;
+  }
+
+  .plats__description {
+    background-color: white;
+    height: 70px;
+    border-radius: 10px;
+    width: 340px;
+    margin-left: 10px;
+  }
+
+  .plats__tartare {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    padding-left: 8px;
+    padding-top: 8px;
+    font-size: 17px;
+  }
+
+  .plats__descriptif {
+    font-family: "Roboto", sans-serif;
+    padding-left: 8px;
+    margin-right: 20px;
+  }
+
+  .desserts__titre {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    border-bottom: solid 2px #99e2d0;
+    width: 30px;
+  }
+
+  .desserts__description {
+    background-color: white;
+    height: 70px;
+    border-radius: 10px;
+    width: 340px;
+    margin-left: 10px;
+  }
+
+  .desserts__tartare {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    padding-left: 8px;
+    padding-top: 8px;
+    font-size: 17px;
+  }
+
+  .desserts__descriptif {
+    font-family: "Roboto", sans-serif;
+    padding-left: 8px;
+    margin-right: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

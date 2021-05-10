@@ -1,0 +1,65 @@
+.logo{
+    width: 50%;
+    font-family: $txt-font-titre;
+    margin-left: 90px;
+}
+.recherche{
+    background-color: lightgrey;
+    height: 40px;
+
+}
+input{
+    border: none;
+    height: 40px;
+    background-color: lightgrey;
+    text-align: center;
+    font-family: $txt-font-texte;
+    font-weight: bold;
+}
+.emo-map-marker{
+    padding-left: 85px;
+}
+.introduction{
+    height: 350px;
+    background-color:#EFEFEF;
+}
+h1{
+    padding-top: 40px;
+    margin: 0;
+    text-align: center;
+    font-family: $txt-font-texte;
+    font-size: 25px;
+    font-weight: bold;
+}
+.phraseheader{
+    font-family: $txt-font-texte;
+    text-align: center;
+    font-size: 20px;
+}
+.buttonrestaurant{
+    background-image: linear-gradient($violet-primaire,$rose-violet-secondaire);
+    height: 50px;
+    width: 250px;
+    border-radius: 30px;
+    margin-top: 40px;
+    margin-left: 60px;
+    border: none;
+    box-shadow: 1px 1px 12px #555;
+}
+.cliquer{
+    color: white;
+    font-size: 20px;
+    font-family: $txt-font-texte;
+}
+.header{
+    display: flex;
+    &__arrow{
+margin-left: 5px;
+}
+    &__logo{
+        width: 10%;
+    }
+    &__img{
+        width: 355px;
+    }
+}
