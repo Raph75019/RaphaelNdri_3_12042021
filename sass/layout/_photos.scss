@@ -1,6 +1,6 @@
 #photorestaurant{
     background-color: lightgray;
-    height: 1150px;
+    height: 1450px;
 }
 .restau{
     position: relative;
@@ -12,9 +12,10 @@
 }
 .imagerestaur img{
     height: 150px;
-    width: 100%;
+    width: 250px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
+    
 }
 figcaption{
     text-decoration: none;

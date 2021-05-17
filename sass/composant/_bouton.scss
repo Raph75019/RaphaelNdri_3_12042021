@@ -1,7 +1,11 @@
 .buttonrestaurant{
     margin-bottom: 20px;
+     cursor: pointer;
+    transition-duration: 2s;
 }
 .cliquer{
-    cursor: pointer;
-    transition-duration: .25s;
+    color: white;
+    font-size: 20px;
+    font-family: $txt-font-texte;
+
 }
