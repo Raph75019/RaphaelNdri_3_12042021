@@ -1,0 +1,54 @@
+#photorestaurant{
+    background-color: lightgray;
+    height: 1150px;
+}
+.restau{
+    position: relative;
+}
+.imagerestaur{
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 1px 1px 12px #555;
+    background-color: white;
+}
+.imagerestaur img{
+    height: 150px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+figcaption{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    margin-left: 10px;
+    display: flex;
+}
+.titre{
+    font-weight: bold;
+    font-size: 20px;
+}
+.coeur1{
+    margin-left: 155px;
+    font-size: 20px;
+}
+.coeur2{
+    margin-left: 180px;
+    font-size: 20px;
+}
+.coeur3{
+    margin-left: 170px;
+    font-size: 20px;
+}
+.coeur4{
+    margin-left: 145px;
+    font-size: 20px;
+}
+.nouveau{
+    position: absolute;
+    bottom: 140px;
+    left: 220px;
+    background-color: $bleu-turquoise-terciaire;
+    padding: 7px 12px;
+    color: black;
+    
+}

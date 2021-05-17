@@ -1,0 +1,74 @@
+.fonctionnement
+{
+    margin-top: 50px;
+    .fonc 
+    {
+        margin: 0 0 30px 30px;
+    }
+   .menu-fonctionnement
+   {
+       display: grid;
+       grid-row-gap: 20px;
+       padding-bottom: 50px;
+       justify-self: center;
+       li 
+       {
+           width: 300px;
+           justify-self: center;
+           :hover
+        {
+            background-color: #F5EDFF;
+            .icon-menu
+            {color: $violet-primaire;
+
+            }
+        }
+       }
+       .btn-nav
+       {
+        width: 300px;
+        height: 60px;
+        color: black;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        box-shadow: 1px 5px 5px lightgrey;
+        background-color: #F2F2F2;
+        position: relative;
+        
+        .icon-menu
+                  {
+                    color: gray;
+                    justify-self: center;
+                    
+                  }
+         
+        .fonctionnement-text
+        {
+            font-size: 14px;
+        }
+        .number
+        {
+            position: absolute;
+            top: 20px;
+            left: -15px;
+            border-radius: 50%;
+            background-color: $violet-primaire;
+            color: white;
+            height: 19px;
+            width: 25px;
+            text-align: center;
+            padding-top: 5px;
+            font-size: 13px;
+        }
+       }
+
+   }
+}
+li{
+    list-style: none;
+}

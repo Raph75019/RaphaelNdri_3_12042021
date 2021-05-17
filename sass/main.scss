@@ -1,7 +1,12 @@
 @import './utils/variable';
-@import './pages/header';
+@import './layout/header';
 @import './pages/style';
-@import './pages/plats';
+@import './layout/plats';
 @import './pages/mediaqueries';
-@import './pages/entrée';
-@import './pages/desserts';
+@import './layout/entrée';
+@import './layout/desserts';
+@import './composant/bouton';
+@import './layout/photos';
+@import './base/base';
+@import './layout/footer';
+@import './pages/index';

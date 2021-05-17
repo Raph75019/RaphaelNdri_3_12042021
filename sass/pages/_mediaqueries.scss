@@ -45,9 +45,11 @@
     
 }
 #photorestaurant{
-    display: flex;
     height: 500px;
 
+}
+.res{
+    display: flex;
 }
 .restau{
     position: relative;
@@ -57,7 +59,7 @@
     box-shadow: 1px 1px 12px #555;
     background-color: white;
     width: 250px;
-    margin-top: 150px;
+    margin-top: 100px;
     
 }
 .imagerestaur img{
@@ -81,5 +83,11 @@
 .coeur4{
     margin-left: 120px;
     font-size: 20px;
+}
+.buttonrestaurant{
+    margin-left: 550px;
+}
+.logo{
+    margin-left: 290px;
 }
 }

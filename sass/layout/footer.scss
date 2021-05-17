@@ -1,0 +1,38 @@
+footer
+{   display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 20px;
+    background-color: #353535;
+    color: white;
+    .footer-titre
+    {
+        margin-left: 20px;
+        margin-top: 20px;
+        font-size: 19px;
+    }
+          .footer-menu
+          { 
+              display: grid;
+            margin-left: 20px;
+            grid-row-gap: 10px;
+            font-weight: bold ;
+            margin-bottom: 20px;
+    .footer-element
+    {
+        display: flex;
+        .ic1
+        { 
+            margin-right: 20px;
+            padding-top: 15px;
+        }
+        .ic2
+        {
+            margin-right: 12px;
+             padding-top: 15px;
+        }
+        a{
+            color: white;
+        }
+    }
+         }
+}
