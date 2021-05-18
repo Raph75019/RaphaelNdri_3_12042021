@@ -86,37 +86,15 @@ a {
   height: 100%;
   width: 50px;
   background-color: #99E2D0;
+  animation: demitourslide 1s;
+  display: none;
 }
 
 .circle__valider {
-  color: red;
-}
-
-.plats__titre {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  margin-left: 20px;
-  border-bottom: solid 2px #99e2d0;
-  width: 30px;
-}
-.plats__description {
-  background-color: white;
-  height: 70px;
-  border-radius: 10px;
-  width: 340px;
-  margin-left: 10px;
-}
-.plats__tartare {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  padding-left: 8px;
-  padding-top: 8px;
-  font-size: 17px;
-}
-.plats__descriptif {
-  font-family: "Roboto", sans-serif;
-  padding-left: 8px;
-  margin-right: 20px;
+  margin: auto;
+  color: white;
+  font-size: 25px;
+  animation: rotate 1s;
 }
 
 .entree {
@@ -140,10 +118,13 @@ a {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   margin-left: 20px;
+  margin-bottom: 15px;
   border-bottom: solid 3px #99e2d0;
   width: 40px;
 }
 .entrees__description {
+  display: flex;
+  justify-content: space-between;
   box-shadow: 1px 1px 12px #555;
   background-color: white;
   height: 70px;
@@ -151,57 +132,35 @@ a {
   width: 340px;
   margin-left: 10px;
   position: relative;
+  margin-bottom: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .entrees__tartare {
-  font-family: "Roboto", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  padding-left: 8px;
-  padding-top: 8px;
+  margin-top: 15px;
+  margin-left: 5px;
   font-size: 17px;
 }
 .entrees__descriptif {
   font-family: "Roboto", sans-serif;
   padding-left: 8px;
-  margin-right: 20px;
   font-size: 15px;
+  margin-top: 5px;
+  font-weight: bold;
 }
 .entrees__prix {
+  font-weight: bold;
+  margin-top: 40px;
+}
+.entrees .entrees__description:hover .entrees__prix {
+  margin-right: 60px;
+  animation: demitourslide 1s;
+}
+.entrees .entrees__description:hover .valider {
   display: flex;
-  margin-left: 310px;
-  bottom: 30px;
-  position: relative;
-  font-weight: bold;
-}
-
-.desserts {
-  animation: menu 4s;
-}
-.desserts__titre {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  margin-left: 20px;
-  border-bottom: solid 2px #99e2d0;
-  width: 30px;
-}
-.desserts__description {
-  box-shadow: 1px 1px 12px #555;
-  background-color: white;
-  height: 70px;
-  border-radius: 10px;
-  width: 340px;
-  margin-left: 10px;
-}
-.desserts__tartare {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  padding-left: 8px;
-  padding-top: 8px;
-  font-size: 17px;
-}
-.desserts__descriptif {
-  font-family: "Roboto", sans-serif;
-  padding-left: 8px;
-  margin-right: 20px;
 }
 
 .buttonrestaurant {
@@ -280,11 +239,11 @@ figcaption {
   color: black;
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
   list-style: none;
-  scroll-behavior: smooth;
+  text-decoration: none;
 }
 
 #container2 {
@@ -546,7 +505,7 @@ li {
     margin-left: 5px;
   }
   .header__logo {
-    width: 100px;
+    width: 150px;
   }
   .header__img {
     width: 100%;
@@ -571,6 +530,23 @@ li {
   .entree__heart {
     padding-top: 45px;
     font-size: 25px;
+  }
+
+  .valider {
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    width: 50px;
+    background-color: #99E2D0;
+    animation: demitourslide 1s;
+    display: none;
+  }
+
+  .circle__valider {
+    margin: auto;
+    color: white;
+    font-size: 25px;
+    animation: rotate 1s;
   }
 }
 @keyframes jump {
@@ -601,6 +577,30 @@ li {
   to {
     transform: translateY(0px);
     opacity: 1;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes demitourslide {
+  from {
+    transform: translateX(50px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes demitourslide {
+  from {
+    transform: translateX(50px);
+  }
+  to {
+    transform: translateX(0);
   }
 }
 

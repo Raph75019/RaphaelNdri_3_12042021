@@ -31,3 +31,27 @@
     }
     
 }
+@keyframes rotate {
+    from{
+        transform: rotate(180deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes demitourslide {
+    from{
+        transform: translateX(50px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes demitourslide {
+    from{
+        transform: translateX(50px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}

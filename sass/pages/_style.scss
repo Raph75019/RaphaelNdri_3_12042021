@@ -31,9 +31,13 @@ a{
   height: 100%;
   width: 50px;
   background-color: $bleu-turquoise-terciaire;
+  animation: demitourslide 1s;
+  display: none;
 }
 .circle__valider{
-  
-  color: red;
+  margin: auto;
+  color: white;
+  font-size: 25px;
+  animation: rotate 1s;
 }
 
