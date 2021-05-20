@@ -1,6 +1,9 @@
 #photorestaurant{
-    background-color: lightgray;
-    height: 1450px;
+    background-color: #f6f6f6;
+    height: 1350px;
+}
+.titrerestau{
+    margin-bottom: 50px;
 }
 .restau{
     position: relative;
@@ -9,15 +12,17 @@
     border-radius: 20px 20px 20px 20px;
     box-shadow: 1px 1px 12px #555;
     background-color: white;
+    margin-bottom: 65px;
+    width: 300px;
+        margin-left: 35px;
 }
 .imagerestaur img{
-    height: 150px;
-    width: 278px;
+    height: 170px;
+    width: 300px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
-    
 }
-figcaption{
+p{
     text-decoration: none;
     color: black;
     font-size: 15px;
@@ -28,28 +33,80 @@ figcaption{
     font-weight: bold;
     font-size: 20px;
 }
-.coeur1{
-    margin-left: 155px;
-    font-size: 20px;
-}
-.coeur2{
-    margin-left: 180px;
-    font-size: 20px;
-}
-.coeur3{
-    margin-left: 170px;
-    font-size: 20px;
-}
-.coeur4{
-    margin-left: 145px;
-    font-size: 20px;
-}
+
 .nouveau{
     position: absolute;
-    bottom: 140px;
-    left: 220px;
+    bottom: 200px;
+    left: 240px;
     background-color: $bleu-turquoise-terciaire;
     padding: 7px 12px;
     color: black;
     
 }
+.nouveau2{
+    position: absolute;
+    bottom: 200px;
+    left: 240px;
+    background-color: $bleu-turquoise-terciaire;
+    padding: 7px 12px;
+    color: black;
+    
+}
+.img__btn{
+    margin-left: 250px;
+    position: relative;
+    bottom: 25px;
+}
+.menu__btn {
+    height: 2rem;
+    width: 2rem;
+    background-color: transparent;
+    border: transparent 0px solid;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor: pointer;
+    position: relative;
+    background-color: black;
+    color: black;
+    
+    &:hover::before {
+      opacity: 1;
+    }
+    
+    &::before {
+      opacity: 0;
+      transition: 0.5s;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background:linear-gradient($violet-primaire 0%,$rose-violet-secondaire 100%);
+    }
+  }
+
+.menu__like {
+    margin: 0;
+    transition-duration: .25s;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    mix-blend-mode: lighten;
+  }
+
+.menu__btn:hover {
+    .menu__like {
+      &--nobg {
+        opacity: 0;
+      }
+    }
+  }
+    

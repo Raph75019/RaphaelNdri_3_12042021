@@ -35,17 +35,30 @@
     {
        font-family: $txt-font-titre;
     }
+.phraseheader{
+    margin-left: 385px;
+}
+}
     .nouveau{
     position: absolute;
-    bottom: 140px;
-    left: 200px;
+    bottom: 270px;
+    left: 480px;
+    background-color: $bleu-turquoise-terciaire;
+    padding: 7px 12px;
+    color: black;
+    
+}
+.nouveau2{
+    position: absolute;
+    bottom: 245px;
+    left: 470px;
     background-color: $bleu-turquoise-terciaire;
     padding: 7px 12px;
     color: black;
     
 }
 #photorestaurant{
-    height: 1000px;
+    height: 1100px;
 
 }
 .res{
@@ -63,38 +76,84 @@
     background-color: white;
     width: 550px;
     margin-top: 100px;
-   
+    margin-right: 40px;
+    margin-left: 40px;
 }
 .imagerestaur img{
     height: 250px;
     width: 550px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
+}
+.titre{
+    font-size: 25px;
+}
+.endroit{
+    font-size: 20px;
+}
+.img__btn{
+    position: relative;
+    bottom: 35px;
+    left: 250px;
+}
+.menu__btn {
+    height: 2rem;
+    width: 2rem;
+    background-color: transparent;
+    border: transparent 0px solid;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor: pointer;
+    position: relative;
+    background-color: black;
+    color: black;
     
-}
-.coeur1{
-    margin-left: 370px;
-    font-size: 20px;
-}
-.coeur2{
-    margin-left: 400px;
-    font-size: 20px;
-}
-.coeur3{
-    margin-left: 390px;
-    font-size: 20px;
-}
-.coeur4{
-    margin-left: 370px;
-    font-size: 20px;
-}
+    &:hover::before {
+      opacity: 1;
+    }
+    
+    &::before {
+      opacity: 0;
+      transition: 0.5s;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background:linear-gradient($violet-primaire 0%,$rose-violet-secondaire 100%);
+    }
+  }
+
+.menu__like {
+    margin: 0;
+    transition-duration: .25s;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    mix-blend-mode: lighten;
+  }
+
+.menu__btn:hover {
+    .menu__like {
+      &--nobg {
+        opacity: 0;
+      }
+    }
+  }
 .buttonrestaurant{
     margin-left: 550px;
-      cursor: pointer;
-    transition-duration: 2s;
 }
 .logo{
-    margin-left: 290px;
+        margin-left: 530px;
+    width: 300px;
 }
 .loader{
   position: fixed;
@@ -140,7 +199,10 @@
 .header{
     display: flex;
     &__arrow{
-margin-left: 5px;
+margin-left: 20px;
+margin-top: 20px;
+font-size: 20px;
+color: black;
 }
     &__logo{
         width: 150px;
@@ -148,6 +210,7 @@ margin-left: 5px;
     &__img{
         width: 100%;
         height: 600px;
+        object-fit: cover;
     }
 }
 .menus{
@@ -183,4 +246,23 @@ margin-left: 5px;
   font-size: 25px;
   animation: rotate 1s;
 }
+.recherche
+{
+    background-color: #E7E4E4;
+    padding: 10px 0 10px 0;
+    margin-top: 2px;
+    form
+     {
+        display: flex;
+        justify-content: center;
+
+        input
+          {
+            height: 20px;
+            background-color: #E7E4E4;
+            border: none;
+            font-size: 20px;
+            font-weight: bold;
+          }
+     }
 }
