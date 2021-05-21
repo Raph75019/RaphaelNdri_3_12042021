@@ -182,6 +182,8 @@ a {
 
 .titrerestau {
   margin-bottom: 50px;
+  margin: 0 0 30px 30px;
+  font-family: "Shrikhand", cursive;
 }
 
 .restau {
@@ -235,7 +237,7 @@ p {
   color: black;
 }
 
-.img__btn {
+.card__btn {
   margin-left: 250px;
   position: relative;
   bottom: 25px;
@@ -402,7 +404,7 @@ li {
   list-style: none;
 }
 
-@media all and (min-width: 1300px) {
+@media (min-width: 1300px) {
   .menu-fonctionnement {
     grid-template-columns: auto auto auto;
   }
@@ -498,7 +500,7 @@ li {
   font-size: 20px;
 }
 
-.img__btn {
+.card__btn {
   position: relative;
   bottom: 35px;
   left: 250px;

@@ -1,4 +1,4 @@
-@media all and ( min-width: 1300px) 
+@media (min-width: 1300px)
 {
     .menu-fonctionnement
     {
@@ -91,7 +91,7 @@
 .endroit{
     font-size: 20px;
 }
-.img__btn{
+.card__btn{
     position: relative;
     bottom: 35px;
     left: 250px;

@@ -4,6 +4,8 @@
 }
 .titrerestau{
     margin-bottom: 50px;
+    margin: 0 0 30px 30px;
+    font-family: $txt-font-titre;
 }
 .restau{
     position: relative;
@@ -52,7 +54,7 @@ p{
     color: black;
     
 }
-.img__btn{
+.card__btn{
     margin-left: 250px;
     position: relative;
     bottom: 25px;
