@@ -24,16 +24,14 @@
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
-p{
-    text-decoration: none;
-    color: black;
-    font-size: 15px;
-    margin-left: 10px;
-    display: flex;
-}
+
 .titre{
     font-weight: bold;
     font-size: 20px;
+    color: black;
+}
+.endroit{
+  color: black;
 }
 
 .nouveau{
@@ -55,9 +53,7 @@ p{
     
 }
 .card__btn{
-    margin-left: 250px;
-    position: relative;
-    bottom: 25px;
+  margin-left: 70px;
 }
 .menu__btn {
     height: 2rem;
@@ -92,7 +88,7 @@ p{
 .menu__like {
     margin: 0;
     transition-duration: .25s;
-    background-color: white;
+    background-color: #efefef;
     position: absolute;
     top: 0;
     left: 0;
