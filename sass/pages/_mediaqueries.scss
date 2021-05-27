@@ -59,6 +59,7 @@
 .res{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 .imagerestaur{
     border-radius: 20px 20px 20px 20px;
@@ -79,6 +80,9 @@
 .endroit{
     font-size: 20px;
     color: black;
+}
+.card__btn{
+    margin-right: 40px;
 }
 .menu__btn {
     height: 2rem;
@@ -113,7 +117,7 @@
 .menu__like {
     margin: 0;
     transition-duration: .25s;
-    background-color: white;
+    background-color: #f6f6f6;
     position: absolute;
     top: 0;
     left: 0;

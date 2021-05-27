@@ -1,7 +1,7 @@
 .logo{
     width: 50%;
     font-family: $txt-font-titre;
-    margin-left: 90px;
+    text-align: center;
 }
 input{
     border: none;
@@ -13,6 +13,7 @@ input{
 }
 .premiertitre{
     padding-top: 30px;
+    text-align: center;
 }
 .introduction{
     height: 350px;
@@ -29,7 +30,7 @@ input{
     width: 250px;
     border-radius: 30px;
     margin-top: 40px;
-    margin-left: 60px;
+    align-items: center;
     border: none;
     box-shadow: 1px 1px 12px #555;
 }

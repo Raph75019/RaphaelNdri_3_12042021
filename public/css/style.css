@@ -1,7 +1,7 @@
 .logo {
   width: 50%;
   font-family: "Shrikhand", cursive;
-  margin-left: 90px;
+  text-align: center;
 }
 
 input {
@@ -15,6 +15,7 @@ input {
 
 .premiertitre {
   padding-top: 30px;
+  text-align: center;
 }
 
 .introduction {
@@ -34,7 +35,7 @@ input {
   width: 250px;
   border-radius: 30px;
   margin-top: 40px;
-  margin-left: 60px;
+  align-items: center;
   border: none;
   box-shadow: 1px 1px 12px #555;
 }
@@ -164,12 +165,6 @@ a {
   display: flex;
 }
 
-.buttonrestaurant {
-  margin-bottom: 20px;
-  cursor: pointer;
-  transition-duration: 2s;
-}
-
 .cliquer {
   color: white;
   font-size: 20px;
@@ -236,7 +231,7 @@ a {
 }
 
 .card__btn {
-  margin-left: 70px;
+  margin-left: 60px;
 }
 
 .menu__btn {
@@ -460,6 +455,7 @@ li {
   .res {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .imagerestaur {
@@ -484,6 +480,10 @@ li {
   .endroit {
     font-size: 20px;
     color: black;
+  }
+
+  .card__btn {
+    margin-right: 40px;
   }
 
   .menu__btn {
@@ -517,7 +517,7 @@ li {
   .menu__like {
     margin: 0;
     transition-duration: 0.25s;
-    background-color: white;
+    background-color: #f6f6f6;
     position: absolute;
     top: 0;
     left: 0;
