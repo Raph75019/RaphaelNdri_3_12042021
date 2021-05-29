@@ -1,9 +1,3 @@
-.logo {
-  width: 50%;
-  font-family: "Shrikhand", cursive;
-  text-align: center;
-}
-
 input {
   border: none;
   height: 40px;
@@ -41,17 +35,23 @@ input {
 }
 
 .header {
-  display: flex;
+  display: block;
 }
 .header__arrow {
-  margin-left: 5px;
-}
-.header__logo {
-  width: 10%;
+  top: 2%;
+  position: absolute;
+  margin-left: 35px;
+  font-size: 20px;
+  color: black;
 }
 .header__img {
   height: 300px;
   width: 100%;
+}
+
+.logo {
+  text-align: center;
+  font-family: "Shrikhand", cursive;
 }
 
 a {
@@ -81,7 +81,7 @@ a {
   position: absolute;
   right: 0px;
   height: 100%;
-  width: 50px;
+  width: 20%;
   background-color: #99E2D0;
   animation: demitourslide 1s;
   display: none;
@@ -104,51 +104,34 @@ a {
   margin-bottom: 30px;
 }
 
-.entrees {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  animation: menu 4s;
-}
 .entrees__titre {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   margin-left: 20px;
   margin-bottom: 15px;
   border-bottom: solid 3px #99e2d0;
-  width: 40px;
+  width: 10%;
 }
 .entrees__description {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  display: flex;
   justify-content: space-between;
   box-shadow: 1px 1px 12px #555;
   background-color: white;
   height: 70px;
   border-radius: 10px;
-  width: 340px;
+  width: 95%;
   margin-left: 10px;
   position: relative;
   margin-bottom: 10px;
+  flex-flow: column wrap;
 }
 .entrees__tartare {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   margin-top: 15px;
-  margin-left: 5px;
   font-size: 17px;
 }
 .entrees__descriptif {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
   font-family: "Roboto", sans-serif;
-  padding-left: 8px;
   font-size: 15px;
   margin-top: 5px;
   font-weight: bold;
@@ -157,8 +140,11 @@ a {
   font-weight: bold;
   margin-top: 40px;
 }
+.entrees__plat {
+  width: 90%;
+}
 .entrees .entrees__description:hover .entrees__prix {
-  margin-right: 60px;
+  margin-right: 40px;
   animation: demitourslide 1s;
 }
 .entrees .entrees__description:hover .valider {
@@ -169,6 +155,11 @@ a {
   color: white;
   font-size: 20px;
   font-family: "Roboto", sans-serif;
+}
+
+.bouton {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 #photorestaurant {
@@ -277,6 +268,20 @@ a {
   mix-blend-mode: lighten;
 }
 
+.menu__like2 {
+  margin: 0;
+  transition-duration: 0.25s;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  mix-blend-mode: lighten;
+}
+
 .menu__btn:hover .menu__like--nobg {
   opacity: 0;
 }
@@ -331,6 +336,10 @@ footer .utensils__footer {
 }
 footer .helping__footer {
   margin-right: 5px;
+}
+
+.logofooter {
+  font-family: "Shrikhand", cursive;
 }
 
 .fonctionnement {
@@ -432,24 +441,28 @@ li {
 
   .nouveau {
     position: absolute;
-    bottom: 270px;
-    left: 480px;
+    bottom: 280px;
+    left: 550px;
     background-color: #99E2D0;
     padding: 7px 12px;
     color: black;
   }
 
+  .texte {
+    justify-content: space-between;
+  }
+
   .nouveau2 {
     position: absolute;
-    bottom: 245px;
-    left: 470px;
+    bottom: 280px;
+    left: 550px;
     background-color: #99E2D0;
     padding: 7px 12px;
     color: black;
   }
 
   #photorestaurant {
-    height: 2000px;
+    height: 900px;
   }
 
   .res {
@@ -462,7 +475,7 @@ li {
     border-radius: 20px 20px 20px 20px;
     box-shadow: 1px 1px 12px #555;
     background-color: white;
-    width: 45%;
+    width: 90%;
   }
 
   .imagerestaur img {
@@ -483,7 +496,7 @@ li {
   }
 
   .card__btn {
-    margin-right: 40px;
+    display: flex;
   }
 
   .menu__btn {
@@ -514,32 +527,40 @@ li {
     background: linear-gradient(#9356DC 0%, #FF79DA 100%);
   }
 
+  .cartes {
+    width: 50%;
+  }
+
   .menu__like {
     margin: 0;
     transition-duration: 0.25s;
-    background-color: #f6f6f6;
+    background-color: #efefef;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    mix-blend-mode: lighten;
+  }
+
+  .menu__like2 {
+    margin: 0;
+    transition-duration: 0.25s;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
     mix-blend-mode: lighten;
   }
 
   .menu__btn:hover .menu__like--nobg {
     opacity: 0;
-  }
-
-  .buttonrestaurant {
-    margin-left: 550px;
-  }
-
-  .logo {
-    justify-content: center;
-    width: 300px;
   }
 
   .loader {
@@ -589,21 +610,23 @@ li {
   }
 
   .header {
-    display: flex;
+    display: block;
   }
   .header__arrow {
-    margin-left: 20px;
-    margin-top: 20px;
-    font-size: 20px;
+    position: absolute;
+    margin-left: 30px;
+    font-size: 25px;
     color: black;
-  }
-  .header__logo {
-    width: 150px;
   }
   .header__img {
     width: 100%;
     height: 600px;
     object-fit: cover;
+  }
+
+  .logo {
+    text-align: center;
+    font-family: "Shrikhand", cursive;
   }
 
   .menus {
@@ -630,7 +653,7 @@ li {
     position: absolute;
     right: 0px;
     height: 100%;
-    width: 50px;
+    width: 15%;
     background-color: #99E2D0;
     animation: demitourslide 1s;
     display: none;

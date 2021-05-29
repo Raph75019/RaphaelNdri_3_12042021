@@ -99,7 +99,19 @@
     justify-content:center;
     mix-blend-mode: lighten;
   }
-
+  .menu__like2 {
+    margin: 0;
+    transition-duration: .25s;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content: flex-end;
+    mix-blend-mode: lighten;
+  }
 .menu__btn:hover {
     .menu__like {
       &--nobg {

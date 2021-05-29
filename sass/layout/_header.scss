@@ -1,8 +1,3 @@
-.logo{
-    width: 50%;
-    font-family: $txt-font-titre;
-    text-align: center;
-}
 input{
     border: none;
     height: 40px;
@@ -35,15 +30,20 @@ input{
     box-shadow: 1px 1px 12px #555;
 }
 .header{
-    display: flex;
+    display: block;
     &__arrow{
-margin-left: 5px;
+        top: 2%;
+        position: absolute;
+margin-left: 35px;
+font-size: 20px;
+color: black;
 }
-    &__logo{
-        width: 10%;
-    }
     &__img{
         height: 300px;
         width: 100%;
     }
+}
+.logo{
+    text-align: center;
+    font-family: $txt-font-titre;
 }
