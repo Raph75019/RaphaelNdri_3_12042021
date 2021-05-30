@@ -53,16 +53,16 @@
     
 }
 .card__btn{
-  margin-left: 60px;
+  display: flex;
+  justify-content: flex-end;
 }
 .menu__btn {
     height: 2rem;
     width: 2rem;
     background-color: transparent;
     border: transparent 0px solid;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    display: flex;
+    justify-content: flex-end;
     cursor: pointer;
     position: relative;
     background-color: black;

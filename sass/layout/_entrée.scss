@@ -17,16 +17,17 @@
         width: 10%;
     }
     &__description{
+        display: flex;
     justify-content: space-between;
-    box-shadow: 1px 1px 12px #555;
-    background-color: white;
-     height: 70px;
-     border-radius: 10px;
-     width: 95%;
-     margin-left: 10px;
-     position: relative;
-     margin-bottom: 10px;
-     flex-flow: column wrap;
+  box-shadow: 1px 1px 12px #555;
+  background-color: white;
+  height: 70px;
+  border-radius: 10px;
+  width: 95%;
+  margin-left: 10px;
+  position: relative;
+  margin-bottom: 10px;
+  flex-flow: column wrap;
     
     }
     &__tartare{
@@ -47,13 +48,16 @@
         margin-top: 40px;
 }
     &__plat{
-        width: 90%;
+         width: 90%;
+         white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 .entrees__description{
     &:hover{
         .entrees__prix{
-            margin-right: 40px;
             animation: demitourslide 1s;
+            margin-right: 40px;
         }
         .valider{
             display: flex;
