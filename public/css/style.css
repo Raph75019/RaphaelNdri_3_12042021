@@ -100,6 +100,7 @@ a {
   margin-left: 20px;
   font-size: 22px;
   margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 .entrees__titre {
@@ -227,6 +228,12 @@ a {
 
 .card__btn {
   display: block;
+  margin-left: 20%;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.card__btn2 {
   margin-left: 80%;
   font-size: 15px;
   margin-top: -35px;
@@ -504,9 +511,8 @@ li {
     margin-left: 10px;
   }
 
-  .card__btn {
-    display: block;
-    margin-left: 90%;
+  .card__btn2 {
+    margin-left: 80%;
     font-size: 15px;
     margin-top: -35px;
   }
@@ -517,7 +523,6 @@ li {
     display: flex;
     justify-content: flex-end;
     cursor: pointer;
-    position: relative;
     background-color: black;
     color: black;
   }
@@ -638,6 +643,10 @@ li {
     font-family: "Shrikhand", cursive;
   }
 
+  .logofooter {
+    text-align: center;
+  }
+
   .menus {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -690,6 +699,11 @@ li {
     border: none;
     font-size: 20px;
     font-weight: bold;
+  }
+}
+@media (max-width: 768px) {
+  .res {
+    align-items: center;
   }
 }
 @keyframes jump {

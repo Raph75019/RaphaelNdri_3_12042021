@@ -87,9 +87,8 @@
     color: black;
     margin-left: 10px;
 }
-.card__btn{
-    display: block;
-    margin-left: 90%;
+.card__btn2{
+    margin-left: 80%;
     font-size: 15px;
     margin-top: -35px;
 }
@@ -99,7 +98,6 @@
     display:flex;
     justify-content: flex-end;
     cursor: pointer;
-    position: relative;
     background-color: black;
     color: black;
     
@@ -217,6 +215,9 @@ color: black;
     text-align: center;
     font-family: $txt-font-titre;
 }
+.logofooter{
+    text-align: center;
+}
 .menus{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -269,5 +270,10 @@ color: black;
             font-weight: bold;
           }
      }
+}
+}
+@media (max-width: 768px){
+.res{
+    align-items: center;
 }
 }
