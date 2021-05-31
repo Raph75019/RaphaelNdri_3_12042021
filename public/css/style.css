@@ -77,21 +77,6 @@ a {
   border: none;
 }
 
-.valider {
-  height: 100%;
-  width: 15%;
-  background-color: #99E2D0;
-  animation: demitourslide 1s;
-}
-
-.circle__valider {
-  margin: auto;
-  color: white;
-  font-size: 25px;
-  animation: rotate 1s;
-  width: 50%;
-}
-
 .entree {
   display: flex;
 }
@@ -103,6 +88,12 @@ a {
   margin-top: 10px;
 }
 
+.entrees__test {
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .entrees__titre {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
@@ -120,38 +111,51 @@ a {
   border-radius: 10px;
   width: 95%;
   margin-left: 10px;
-  position: relative;
   margin-bottom: 10px;
   flex-flow: column wrap;
+  overflow: hidden;
+  transition: width 2s;
 }
-.entrees__tartare {
+.entrees__description:hover .valider {
+  animation: demitourslide 1s;
+}
+.entrees__description:hover .entrees__test {
+  width: 60%;
+}
+.entrees__titre__plat {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   margin-top: 15px;
+  margin-left: 10px;
   font-size: 17px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .entrees__descriptif {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
+  margin-left: 10px;
   margin-top: 5px;
   font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .entrees__prix {
   font-weight: bold;
   margin-top: 40px;
+  width: 20%;
 }
-.entrees__plat {
-  width: 90%;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+.entrees .valider {
+  height: 100%;
+  width: 30%;
+  background-color: #99E2D0;
 }
-.entrees .entrees__description:hover .entrees__prix {
-  animation: demitourslide 1s;
-  margin-right: 40px;
-}
-.entrees .entrees__description:hover .valider {
-  display: flex;
+.entrees .circle__valider {
+  margin: auto;
+  color: white;
+  font-size: 25px;
+  animation: rotate 1s;
+  width: 50%;
 }
 
 .cliquer {
@@ -667,23 +671,6 @@ li {
     font-size: 25px;
   }
 
-  .valider {
-    position: absolute;
-    right: 0px;
-    height: 100%;
-    width: 15%;
-    background-color: #99E2D0;
-    animation: demitourslide 1s;
-    display: none;
-  }
-
-  .circle__valider {
-    margin: auto;
-    color: white;
-    font-size: 25px;
-    animation: rotate 1s;
-  }
-
   .recherche {
     background-color: #E7E4E4;
     padding: 10px 0 10px 0;
@@ -742,14 +729,6 @@ li {
   }
   to {
     transform: rotate(360deg);
-  }
-}
-@keyframes demitourslide {
-  from {
-    transform: translateX(50px);
-  }
-  to {
-    transform: translateX(0);
   }
 }
 @keyframes demitourslide {

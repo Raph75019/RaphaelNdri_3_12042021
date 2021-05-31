@@ -236,21 +236,6 @@ color: black;
         font-size: 25px;
     }
 }
-.valider{
-  position: absolute;
-  right: 0px;
-  height: 100%;
-  width: 15%;
-  background-color: $bleu-turquoise-terciaire;
-  animation: demitourslide 1s;
-  display: none;
-}
-.circle__valider{
-  margin: auto;
-  color: white;
-  font-size: 25px;
-  animation: rotate 1s;
-}
 .recherche
 {
     background-color: #E7E4E4;
