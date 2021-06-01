@@ -38,11 +38,14 @@
   transition : width 2s;
   &:hover{
       .valider{
-        animation: demitourslide 1s;
+        animation: demitourslide .5s;
       }
         .entrees__test{
             width: 60%;
         }   
+        .circle__valider{
+            animation: rotate 1s;
+        }
     }
     }
     &__titre__plat{
@@ -66,18 +69,21 @@
     &__prix{
        font-weight: bold;
         margin-top: 40px;
-        width: 20%
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
 }
 .valider{
-  height: 100%;
+    height: 100%;
   width: 30%;
   background-color: $bleu-turquoise-terciaire;
 }
 .circle__valider{
-  margin: auto;
   color: white;
   font-size: 25px;
-  animation: rotate 1s;
-  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+  margin-right: 30%;
 }
 }
