@@ -34,6 +34,7 @@
 .endroit{
   color: black;
   margin-left: 15px;
+  margin-bottom: 10px;
 }
 
 .nouveau{
@@ -56,9 +57,14 @@
 }
 .card__btn{
   display: block;
+    margin-left: 20%;
+    font-size: 15px;
+    margin-top: 10px;;
+}
+.card__btn2{
     margin-left: 80%;
     font-size: 15px;
-    margin-top: -35px;;
+    margin-top: -35px;
 }
 .menu__btn {
     height: 2rem;
