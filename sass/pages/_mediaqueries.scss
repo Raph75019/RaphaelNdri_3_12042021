@@ -38,7 +38,7 @@
     .nouveau{
     position: absolute;
     bottom: 230px;
-    left: 480px;
+    left: 550px;
     background-color: $bleu-turquoise-terciaire;
     padding: 7px 12px;
     color: black;
@@ -61,7 +61,7 @@
 }
 .logofooter{
     text-align: center;
-     font-family: $txt-font-titre;
+     font-family: $txt-font-titre
 }
 .res{
     display: flex;
@@ -92,7 +92,7 @@
     margin-left: 10px;
 }
 .card__btn2{
-    margin-left: 90%;
+    margin-left: 80%;
     font-size: 15px;
     margin-top: -35px;
 }
@@ -218,9 +218,6 @@ color: black;
 .logo{
     text-align: center;
     font-family: $txt-font-titre;
-}
-.grostitre{
-    text-align: center;
 }
 .menus{
     display: grid;
