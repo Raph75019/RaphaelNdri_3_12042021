@@ -59,6 +59,10 @@
 #photorestaurant{
     height: 900px;
 }
+.logofoo{
+    text-align: center;
+     font-family: $txt-font-titre
+}
 .res{
     display: flex;
     flex-wrap: wrap;
@@ -87,9 +91,8 @@
     color: black;
     margin-left: 10px;
 }
-.card__btn{
-    display: block;
-    margin-left: 90%;
+.card__btn2{
+    margin-left: 80%;
     font-size: 15px;
     margin-top: -35px;
 }
@@ -99,7 +102,6 @@
     display:flex;
     justify-content: flex-end;
     cursor: pointer;
-    position: relative;
     background-color: black;
     color: black;
     
@@ -235,21 +237,6 @@ color: black;
         font-size: 25px;
     }
 }
-.valider{
-  position: absolute;
-  right: 0px;
-  height: 100%;
-  width: 15%;
-  background-color: $bleu-turquoise-terciaire;
-  animation: demitourslide 1s;
-  display: none;
-}
-.circle__valider{
-  margin: auto;
-  color: white;
-  font-size: 25px;
-  animation: rotate 1s;
-}
 .recherche
 {
     background-color: #E7E4E4;
@@ -269,5 +256,110 @@ color: black;
             font-weight: bold;
           }
      }
+}
+}
+@media all and (min-width: 376px) and (max-width: 769px)
+{
+.res{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.menus{
+    margin-left: 25%;
+}
+.card__btn{
+    margin-left: 60%;
+    font-size: 15px;
+}
+.entree{
+    display: flex;
+    &__titre{
+        font-family: $txt-font-titre ;
+        margin-left: 20px;
+        font-size: 22px;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+}
+.entrees{
+    &__test{
+        width: 80%;
+        align-items: center;
+        white-space: nowrap;
+         overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &__titre{
+        font-family: $txt-font-texte;
+        font-size: 20px;
+        margin-left: 20px;
+        margin-bottom: 15px;
+        border-bottom: solid 3px #99e2d0;
+        width: 10%;
+    }
+    &__description{
+        display: flex;
+    justify-content: space-between;;
+  box-shadow: 1px 1px 12px #555;
+  background-color: white;
+  height: 70px;
+  border-radius: 10px;
+  width: 60%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  flex-flow: column wrap;
+  overflow: hidden;
+  transition : width 2s;
+  &:hover{
+      .valider{
+        animation: demitourslide .5s;
+      }
+        .entrees__test{
+            width: 60%;
+        }   
+        .circle__valider{
+            animation: rotate 1s;
+        }
+    }
+    }
+    &__titre__plat{
+        font-family:Arial, Helvetica, sans-serif ;
+        font-weight: bold;
+        margin-top: 15px;
+        margin-left: 10px;
+        font-size: 17px;
+         overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &__descriptif{
+        font-family: $txt-font-texte;
+        font-size: 15px;
+        margin-left: 10px;
+        margin-top: 5px;
+        font-weight: bold; 
+         overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &__prix{
+       font-weight: bold;
+        margin-top: 40px;
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+}
+.valider{
+    height: 100%;
+  width: 30%;
+  background-color: $bleu-turquoise-terciaire;
+}
+.circle__valider{
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+  margin-right: 30%;
+}
 }
 }
