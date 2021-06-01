@@ -5,9 +5,16 @@
         margin-left: 20px;
         font-size: 22px;
         margin-bottom: 30px;
+        margin-top: 10px;
     }
 }
 .entrees{
+    &__test{
+        width: 80%;
+        white-space: nowrap;
+         overflow: hidden;
+        text-overflow: ellipsis;
+    }
     &__titre{
         font-family: $txt-font-texte;
         font-size: 20px;
@@ -25,43 +32,58 @@
   border-radius: 10px;
   width: 95%;
   margin-left: 10px;
-  position: relative;
   margin-bottom: 10px;
   flex-flow: column wrap;
-    
+  overflow: hidden;
+  transition : width 2s;
+  &:hover{
+      .valider{
+        animation: demitourslide .5s;
+      }
+        .entrees__test{
+            width: 60%;
+        }   
+        .circle__valider{
+            animation: rotate 1s;
+        }
     }
-    &__tartare{
+    }
+    &__titre__plat{
         font-family:Arial, Helvetica, sans-serif ;
         font-weight: bold;
         margin-top: 15px;
+        margin-left: 10px;
         font-size: 17px;
-        
+         overflow: hidden;
+        text-overflow: ellipsis;
     }
     &__descriptif{
         font-family: $txt-font-texte;
         font-size: 15px;
+        margin-left: 10px;
         margin-top: 5px;
         font-weight: bold; 
+         overflow: hidden;
+        text-overflow: ellipsis;
     }
     &__prix{
        font-weight: bold;
         margin-top: 40px;
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
 }
-    &__plat{
-         width: 90%;
-         white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-    }
-.entrees__description{
-    &:hover{
-        .entrees__prix{
-            animation: demitourslide 1s;
-            margin-right: 40px;
-        }
-        .valider{
-            display: flex;
-        }
-    }
+.valider{
+    height: 100%;
+  width: 30%;
+  background-color: $bleu-turquoise-terciaire;
+}
+.circle__valider{
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+  margin-right: 30%;
 }
 }
