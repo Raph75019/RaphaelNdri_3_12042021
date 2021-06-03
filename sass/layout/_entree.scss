@@ -11,9 +11,6 @@
 .entrees{
     &__test{
         width: 80%;
-        white-space: nowrap;
-         overflow: hidden;
-        text-overflow: ellipsis;
     }
     &__titre{
         font-family: $txt-font-texte;
@@ -24,6 +21,7 @@
         width: 10%;
     }
     &__description{
+        
         animation: menu 3s;
         display: flex;
     justify-content: space-between;
@@ -39,16 +37,16 @@
   transition : width 2s;
   &:hover{
       .valider{
-        animation: demitourslide .5s;
+        animation: demitourslide 1s;
       }
         .entrees__test{
-            width: 60%;
+            width: 50%;
         }   
         .circle__valider{
             animation: rotate 1s;
         }
         .entrees__prix{
-            animation: demitourslide .5s;
+            animation: demitourslide 1s;
             margin-right: 20px;
         }
     }
@@ -59,29 +57,29 @@
         margin-top: 15px;
         margin-left: 10px;
         font-size: 17px;
-         overflow: hidden;
-        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow:ellipsis;
     }
     &__descriptif{
         font-family: $txt-font-texte;
         font-size: 15px;
         margin-left: 10px;
         margin-top: 5px;
-        font-weight: bold; 
-         overflow: hidden;
-        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow:ellipsis;
     }
     &__prix{
        font-weight: bold;
         margin-top: 40px;
         width: 20%;
-        display: flex;
-        justify-content: flex-end;
+        margin-left: 10%;
 }
 .valider{
     height: 100%;
-  width: 30%;
-  background-color: $bleu-turquoise-terciaire;
+    width: 30%;
+    background-color: $bleu-turquoise-terciaire;
 }
 .circle__valider{
   color: white;
