@@ -35,10 +35,12 @@ input {
   cursor: pointer;
   transition-duration: 0.25s;
   box-shadow: 0.5rem 0.5rem 10px rgba(0, 0, 0, 0.25);
+  filter: brightness(90%);
 }
 .buttonrestaurant:hover {
+  filter: brightness(100%);
+  box-shadow: 1rem 1rem 5px rgba(0, 0, 0, 0.7);
   background-color: white;
-  box-shadow: 1rem 1rem 5px rgba(0, 0, 0, 0.5);
 }
 
 .header {
@@ -389,7 +391,6 @@ footer .footer-titre {
   font-size: 19px;
 }
 footer .footer-menu {
-  display: grid;
   margin-left: 20px;
   grid-row-gap: 10px;
   font-weight: bold;
@@ -492,7 +493,6 @@ li {
 
   .footer-menu {
     margin-left: 0;
-    grid-template-columns: auto auto auto auto;
   }
 
   .footer-element {
@@ -543,7 +543,6 @@ li {
   }
 
   .logofooter {
-    text-align: center;
     font-family: "Shrikhand", cursive;
   }
 
